@@ -27,7 +27,7 @@ using namespace std;
 
 int main()
 {
-	int L, p;
+	int L;
 	map<pair<string, string>, const char*> nextMap =
 	{
 		{{"+x","No"}, "+x" }, {{"-x","No"}, "-x" }, {{"+y","No"}, "+y" }, {{"-y","No"}, "-y" }, {{"+z","No"}, "+z" }, {{"-z","No"}, "-z" },
