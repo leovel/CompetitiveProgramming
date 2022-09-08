@@ -4,43 +4,23 @@
 #include <cstdio>
 #include <cstring>
 #include <string>
-//#include <map>
 #include <vector>
 using namespace std;
 
-//typedef long long ll;
-//typedef pair<int, int> ii;
-//typedef vector<ii> vii;
 typedef vector<int> vi;
-//#define INF 1000000000;
-
-
-//memset(memo, -1, sizeof memo); // initialize table with -1
-//memset(arr, 0, sizeof arr); // to clear array of integers
-
-// index = (index + 1) % n; // index++; if (index >= n) index = 0;
-// index = (index + n - 1) % n; // index--; if (index < 0) index = n - 1;
-// int ans = (int)((double)d + 0.5); // for rounding to nearest integer
 
 int NMOD = 1000000007;
 int n, x, current;
 vi v;
-int memo[101][1000001];
+int memo[1000001];
 
 int main()
 {
 	v.reserve(101);
-	//memset(memo, -1, sizeof memo);
 
-	while(scanf("%d %d", &n, &x))
+	while(scanf("%d %d", &n, &x) != EOF)
 	{
-		for (int i = 0; i < n; i++)
-		{
-			for (int k = 0; k <= x; k++)
-			{
-				memo[i][k] = 0;
-			}
-		}
+		memset(memo, 0, sizeof memo);
 		int cursor = n;
 		v.clear();
 		while (cursor--)
@@ -50,26 +30,33 @@ int main()
 
 		}
 
-		//sort(v.begin(), v.begin() + n);
+		sort(v.begin(), v.end());
 
 		for (int value = 0; value <= x; value += v[0] )
 		{
-			memo[0][value] = 1;
+			if(value != 0 || x % v[0] == 0)
+				memo[value] = 1;
 		}
-
+		int result = 0;
 		for (int i = 1; i < n; i++)
 		{
-			for (int value = 0; value <= x; value++)
+			int current = v[i];
+			if (current % x == 0)
+				result = (result + 1) % NMOD;
+			for (int value = current; value <= x; value += current)
 			{
-				for (int k = 0; k <= value; k += v[i])
+				memo[value] = (memo[value] + 1) % NMOD;
+			}
+
+			for (int value = 1; value < x; value++)
+			{
+				if (memo[value] != 0 && (x - value) % current == 0)
 				{
-					memo[i][value] = (memo[i][value] + memo[i - 1][value - k] % NMOD) % NMOD;
+					result = (result + memo[value]) % NMOD;
 				}
 			}
 		}
 
-		printf("%d\n", memo[n - 1][x]);
+		printf("%d\n", result);
 	}
-
-	return 0;
 }
