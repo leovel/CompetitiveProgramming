@@ -9,10 +9,11 @@ int main()
 	ll k, m, segundos, horas, minutos;
 	while (scanf("%lld %lld", &k, &m) != EOF)
 	{
+		// Calculando a hora em segundos.
+		// D = 86400, D/2 = 43200
+		// + 30 segundos para arredondar ao minuto mais próximo.
+		segundos =  (43200 * (86400 - k) / abs(k - m)) % 43200 + 30;
 
-		segundos =  (43200 * (86400 - k) / abs(k - m)) % 43200 + 30;    // Calculando a hora em segundos.
-                                                                        // D = 86400, D/2 = 43200
-                                                                        // + 30 segundos para arredondar ao minuto mais próximo.
 		horas = (segundos / 3600) % 12;
 		minutos = (segundos % 3600) / 60;
 
