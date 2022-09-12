@@ -2,7 +2,6 @@
 #include <vector>
 #include <cstdio>
 #include <bitset>
-#include <map>
 
 using namespace std;
 
@@ -34,8 +33,6 @@ bool isPrime(ll N) {                             // good enough prime test
 } // note: only guaranteed to work for N <= (last prime in vll p)^2
 
 ll n;
-map<ll, ll> cache;
-
 
 int main()
 {
