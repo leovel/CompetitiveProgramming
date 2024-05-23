@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p1329", "p1329\p1329.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mastermind", "mastermind\mastermind.vcxproj", "{72D99B50-9650-49AE-87F2-85227DA8BB40}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pivot", "pivot\pivot.vcxproj", "{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -291,6 +293,14 @@ Global
 		{72D99B50-9650-49AE-87F2-85227DA8BB40}.Release|x64.Build.0 = Release|x64
 		{72D99B50-9650-49AE-87F2-85227DA8BB40}.Release|x86.ActiveCfg = Release|Win32
 		{72D99B50-9650-49AE-87F2-85227DA8BB40}.Release|x86.Build.0 = Release|Win32
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Debug|x64.ActiveCfg = Debug|x64
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Debug|x64.Build.0 = Debug|x64
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Debug|x86.Build.0 = Debug|Win32
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Release|x64.ActiveCfg = Release|x64
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Release|x64.Build.0 = Release|x64
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Release|x86.ActiveCfg = Release|Win32
+		{F6104F8C-E5B3-4DF4-A8F0-CA667418E355}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
