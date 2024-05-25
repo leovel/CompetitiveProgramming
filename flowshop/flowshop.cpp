@@ -14,12 +14,12 @@ int main()
 			if (i == 0 || j == 0)
 				times[i][j] = 0;
 			else
-			{
+		{
 				cin >> times[i][j];
 				times[i][j] += max(times[i - 1][j], times[i][j - 1]);
 				if (j == M)
-					i == 0 ? cout << times[i][j] : cout << " " << times[i][j];
-			}
+				i == 0 ? cout << times[i][j] : cout << " " << times[i][j];
+		}
 		}
 	cout << "\n";
 }
