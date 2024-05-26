@@ -1,9 +1,4 @@
-#define _CRT_SECURE_NO_DEPRECATE
-#include <cstdio>
-#include <cstring>
-#include <string>
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 string N, M, before_dot = "", after_dot = "";
@@ -11,6 +6,8 @@ bool zeros;
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     while (cin >> N)
     {
