@@ -68,6 +68,7 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
+
     int nro = 0;
     while (cin >> n)
     {
