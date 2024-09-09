@@ -97,6 +97,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p12541", "p12541\p12541.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p12709", "p12709\p12709.vcxproj", "{2A4D0031-9009-4079-AC0B-698FD93530E3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "height", "height\height.vcxproj", "{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -481,6 +483,14 @@ Global
 		{2A4D0031-9009-4079-AC0B-698FD93530E3}.Release|x64.Build.0 = Release|x64
 		{2A4D0031-9009-4079-AC0B-698FD93530E3}.Release|x86.ActiveCfg = Release|Win32
 		{2A4D0031-9009-4079-AC0B-698FD93530E3}.Release|x86.Build.0 = Release|Win32
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Debug|x64.ActiveCfg = Debug|x64
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Debug|x64.Build.0 = Debug|x64
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Debug|x86.Build.0 = Debug|Win32
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Release|x64.ActiveCfg = Release|x64
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Release|x64.Build.0 = Release|x64
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Release|x86.ActiveCfg = Release|Win32
+		{5E5C43FF-CA34-4177-AFDC-8179690CC6C4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
