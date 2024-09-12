@@ -4,7 +4,7 @@ using namespace std;
 
 int n;
 char names[1001][32];
-char name[32];
+char name[33];
 vector<char*> name_list(1002);
 
 int main()
@@ -36,15 +36,32 @@ int main()
         }
         else
         {
-            memcpy(name, left_name, i);
+            memcpy(name, left_name, i + 1);
+            bool reset;
+            do
+            {
+                reset = false;
+                if (left_name[i] != 'Z')
+                    name[i] = (char)(left_name[i] + 1);
+                else
+                {
+                    name[i] = 'Z';
+                    reset = true;
+                }
 
-            /*do
-            {*/
-                name[i] = (char)((int)left_name[i] + 1);
-                name[++i] = '\0';
-            /*}while(strcmp(name, rigth_name) >= 0 && i < ncl);*/
+                name[i + 1] = '\0';
+
+                if (strcmp(name, rigth_name) >= 0)
+                {
+                    name[i] = left_name[i];
+                    reset = true;
+                }
+
+                i++;
+
+            } while (reset);
             
-            printf("%s\n", name);
+            i >= ncl - 1 ? printf("%s\n", left_name) : printf("%s\n", name);
         }
     }
 }
