@@ -57,7 +57,8 @@ int main()
                     reset = true;
                 }
 
-                i++;
+                if(reset)
+                    i++;
 
             } while (reset);
             
