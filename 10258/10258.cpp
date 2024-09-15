@@ -53,11 +53,11 @@ int main()
 
         sort(results.begin(), results.end(), less<tuple<int, int, int>>());
 
-        for(auto t: results)
-            std::cout << get<2>(t) << " " << -get<0>(t) << " " << get<1>(t) << '\n';
+        for (auto &t : results)
+            printf("%d %d %d\n", get<2>(t), -get<0>(t), get<1>(t));
 
-        if(N)
-        std::cout << '\n';
+        if (N)
+            printf("\n");
         
     }
 
