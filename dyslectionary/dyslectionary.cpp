@@ -40,6 +40,9 @@ static void process(bool last)
 
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     n = 0;
     max_width = 0;
     while (getline(cin, word_group[n]))
