@@ -2,11 +2,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n, A[1000001], L[500001], R[500001];
+int n, A[1000002], L[500002], R[500002];
 
-static int mergelr(int p, int q, int r)
+static long long mergelr(int p, int q, int r)
 {
-    int ninv = 0, nL = q - p + 1, nR = r - q;
+    long long ninv = 0;
+    int nL = q - p + 1, nR = r - q;
     memcpy(L, A + p, nL * sizeof(int));
     memcpy(R, A + q + 1, nR * sizeof(int));
     int i = 0, j = 0, k = p;
@@ -30,12 +31,12 @@ static int mergelr(int p, int q, int r)
     return ninv;
 }
 
-static int inversion_index(int p, int r)
+static long long inversion_index(int p, int r)
 {
     if (p >= r)
         return 0;
 
-    int q = (p + r) / 2;
+    int q = (p + r) >> 1;
 
     return inversion_index(p, q) + inversion_index(q + 1, r) + mergelr(p, q, r);
 }
@@ -45,6 +46,6 @@ int main()
     while (scanf("%d", &n) && n)
     {
         for (int i = 0; i < n; scanf("%d", &A[i++]));
-        printf("%d\n", inversion_index(0, n - 1));
+        printf("%lld\n", inversion_index(0, n - 1));
     }
 }
