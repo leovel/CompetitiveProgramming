@@ -37,40 +37,6 @@ using namespace std;
 //
 //    for (long long exp = 1; m / exp > 0; exp *= BASE)
 //        countSort(n, exp);
-//}//static long long getMax(int n)
-//{
-//    long long mx = arr[0];
-//    for (int i = 1; i < n; i++)
-//        if (arr[i] > mx)
-//            mx = arr[i];
-//    return mx;
-//}
-//
-//static void countSort(int n, int exp)
-//{
-//    int i, count[BASE] = { 0 };
-//
-//    for (i = 0; i < n; i++)
-//        count[(arr[i] / exp) % BASE]++;
-//
-//    for (i = 1; i < BASE; i++)
-//        count[i] += count[i - 1];
-//
-//    for (i = n - 1; i >= 0; i--) {
-//        output[count[(arr[i] / exp) % BASE] - 1] = arr[i];
-//        count[(arr[i] / exp) % BASE]--;
-//    }
-//
-//    for (i = 0; i < n; i++)
-//        arr[i] = output[i];
-//}
-//
-//static void radixsort(int n)
-//{
-//    long long m = getMax(n);
-//
-//    for (long long exp = 1; m / exp > 0; exp *= BASE)
-//        countSort(n, exp);
 //}
 
 static bool arrayIsSorted(int* a, int n) {
