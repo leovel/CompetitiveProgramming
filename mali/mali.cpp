@@ -29,6 +29,31 @@ int N, A, B, maxSum, setA[101] = {0}, setB[101] = {0}, tempA[101], tempB[101];
 
 
 
+//static void countSort(int n)
+//{
+//	int i, countA[101], countB[101], *outputA = new int[n](), *outputB = new int[n]();
+//
+//	memcpy(&countA, &setA, sizeof(int) * 101);
+//	memcpy(&countB, &setB, sizeof(int) * 101);
+//
+//	for (i = 1; i < 101; i++)
+//	{
+//		countA[i] += countA[i - 1];
+//		countB[i] += countB[i - 1];
+//	}
+//        
+//
+//    for (i = n - 1; i >= 0; i--) {
+//        outputA[countA[A[i]]-- - 1] = A[i];
+//		outputB[countB[B[i]]-- - 1] = B[i];
+//    }
+//
+//	memcpy(&A, outputA, sizeof(int) * n);
+//	memcpy(&B, outputB, sizeof(int) * n);
+//}
+
+
+
 int main()
 {
     scanf("%d", &N);
