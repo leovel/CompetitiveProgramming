@@ -174,6 +174,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "commercials", "DP\commercia
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prozor", "DP\prozor\prozor.vcxproj", "{128E654F-B179-4A77-81BD-202C94DA2137}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sellingspatulas", "DP\sellingspatulas\sellingspatulas.vcxproj", "{91A29BD2-6445-452C-A474-7DA7CB342551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -798,6 +800,14 @@ Global
 		{128E654F-B179-4A77-81BD-202C94DA2137}.Release|x64.Build.0 = Release|x64
 		{128E654F-B179-4A77-81BD-202C94DA2137}.Release|x86.ActiveCfg = Release|Win32
 		{128E654F-B179-4A77-81BD-202C94DA2137}.Release|x86.Build.0 = Release|Win32
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Debug|x64.ActiveCfg = Debug|x64
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Debug|x64.Build.0 = Debug|x64
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Debug|x86.ActiveCfg = Debug|Win32
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Debug|x86.Build.0 = Debug|Win32
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Release|x64.ActiveCfg = Release|x64
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Release|x64.Build.0 = Release|x64
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Release|x86.ActiveCfg = Release|Win32
+		{91A29BD2-6445-452C-A474-7DA7CB342551}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -882,6 +892,7 @@ Global
 		{B58A5A59-C575-486F-B858-8FE08C7820F0} = {CD439C5F-0CC8-459E-BCA8-F15F7EE79291}
 		{C1DB8C78-220A-42D5-80E1-4698522C799E} = {CD439C5F-0CC8-459E-BCA8-F15F7EE79291}
 		{128E654F-B179-4A77-81BD-202C94DA2137} = {CD439C5F-0CC8-459E-BCA8-F15F7EE79291}
+		{91A29BD2-6445-452C-A474-7DA7CB342551} = {CD439C5F-0CC8-459E-BCA8-F15F7EE79291}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C06B790C-2AC5-4A1A-99C3-08C2DB73C984}
